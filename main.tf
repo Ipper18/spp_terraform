@@ -28,8 +28,8 @@ data "aws_sqs_queue" "sensor_queue" {
 
 data "archive_file" "lambda_zip" {
   type        = "zip"
-  source_dir  = "$C:\Users\Igor\Desktop\Terraform\TemperatureSensorHandler-e0dc91ce-48a6-48a5-93b8-a243bfc29584"
-  output_path = "$C:\Users\Igor\Desktop\Terraform\TemperatureSensorHandler-e0dc91ce-48a6-48a5-93b8-a243bfc29584/lambda.zip"
+  source_dir  = "$TemperatureSensorHandler-e0dc91ce-48a6-48a5-93b8-a243bfc29584"
+  output_path = "$TemperatureSensorHandler-e0dc91ce-48a6-48a5-93b8-a243bfc29584/lambda.zip"
 }
 
 resource "aws_lambda_function" "temperature_sensor_handler" {
